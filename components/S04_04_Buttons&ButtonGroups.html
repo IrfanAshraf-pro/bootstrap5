@@ -41,11 +41,11 @@
       <div class="card p-3 bg-light">
         <div class="container">
           <!-- type="button" & class="btn btn-secondary"-->
-          <button>Secondary</button>
+          <button class="btn btn-secondary">Secondary</button>
           <!-- btn-success -->
-          <button class="btn">Success</button>
+          <button class="btn btn-success">Success</button>
           <!-- btn-danger -->
-          <button class="btn">Danger</button>
+          <button class="btn btn-danger">Danger</button>
           <button class="btn btn-warning">Warning</button>
           <button class="btn btn-info">Info</button>
           <button class="btn btn-light">Light</button>
@@ -55,15 +55,15 @@
           <!-- Button tags -->
 
           <!-- class="btn btn-info" & role="button" -->
-          <a href="#">Link</a>
+          <a href="#" class="btn btn-info" role="button">Link</a>
           <!--  type="submit" -->
-          <button class="btn btn-warning">Button</button>
+          <button class="btn btn-warning" type="submit">Button</button>
           <!-- type="button" & value="Input" -->
-          <input class="btn btn-primary" />
+          <input class="btn btn-primary" type="submit" value="Input" />
           <!-- type="submit" value="Submit" -->
-          <input class="btn btn-success" />
+          <input class="btn btn-success" value="Submit" type="submit" />
           <!-- type="reset" value="Reset" -->
-          <input class="btn btn-danger" />
+          <input class="btn btn-danger" type="reset" value="Reset" />
         </div>
       </div>
 
@@ -74,13 +74,15 @@
       <div class="card p-3 bg-light">
         <div class="container">
           <!-- btn-outline-primary -->
-          <button type="button" class="btn">Primary</button>
+          <button type="button" class="btn btn-outline-primary">Primary</button>
           <!-- btn-outline-secondary -->
-          <button type="button" class="btn">Secondary</button>
+          <button type="button" class="btn btn-outline-secondary">
+            Secondary
+          </button>
           <!-- btn-outline-success -->
-          <button type="button" class="btn">Success</button>
+          <button type="button" class="btn btn-outline-success">Success</button>
           <!-- btn-outline-danger -->
-          <button type="button" class="btn">Danger</button>
+          <button type="button" class="btn btn-outline-danger">Danger</button>
           <button type="button" class="btn btn-outline-warning">Warning</button>
           <button type="button" class="btn btn-outline-info">Info</button>
           <button type="button" class="btn btn-outline-light">Light</button>
@@ -95,13 +97,21 @@
       <div class="card p-3 bg-light">
         <div class="container">
           <!-- btn-lg -->
-          <button type="button" class="btn btn-primary">Large button</button>
+          <button type="button" class="btn btn-lg btn-primary">
+            Large button
+          </button>
           <!-- btn-lg -->
-          <button type="button" class="btn btn-secondary">Large button</button>
+          <button type="button" class="btn btn-lg btn-secondary">
+            Large button
+          </button>
           <!-- btn-sm -->
-          <button type="button" class="btn btn-primary">Small button</button>
+          <button type="button" class="btn btn-sm btn-primary">
+            Small button
+          </button>
           <!-- btn-sm -->
-          <button type="button" class="btn btn-secondary">Small button</button>
+          <button type="button" class="btn btn-sm btn-secondary">
+            Small button
+          </button>
         </div>
       </div>
 
@@ -112,7 +122,7 @@
       <div class="card p-3 bg-light">
         <div class="container">
           <!-- attribute of "disabled" -->
-          <button type="button" class="btn btn-lg btn-primary">
+          <button type="button" class="btn btn-lg btn-primary" disabled>
             Primary button
           </button>
           <button type="button" class="btn btn-secondary btn-lg" disabled>
@@ -125,6 +135,7 @@
             class="btn btn-primary btn-lg disabled"
             tabindex="-1"
             role="button"
+            aria-disabled="true"
             >Primary link</a
           >
           <!-- aria-disabled="true" -->
@@ -134,6 +145,7 @@
             class="btn btn-secondary btn-lg disabled"
             tabindex="-1"
             role="button"
+            aria-disabled="true"
             >Link</a
           >
         </div>
@@ -147,23 +159,23 @@
       <div class="card p-3 bg-light">
         <div class="container">
           <!-- d-grid gap-2 -->
-          <div class="">
+          <div class="d-grid gap-2">
             <button class="btn btn-primary" type="button">Button-1</button>
             <button class="btn btn-danger" type="button">Button-2</button>
           </div>
 
           <!--  d-md-block -->
-          <div class="d-grid gap-2">
+          <div class="d-grid gap-2 d-md-block">
             <button class="btn btn-warning" type="button">Button-3</button>
             <button class="btn btn-info" type="button">Button-4</button>
           </div>
           <!-- col-6 mx-auto -->
-          <div class="d-grid gap-2">
+          <div class="d-grid gap-2 col-6 mx-auto">
             <button class="btn btn-info" type="button">Button</button>
             <button class="btn btn-success" type="button">Button</button>
           </div>
           <!-- gap-2 d-md-flex justify-content-md-end -->
-          <div class="d-grid">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <button class="btn btn-info me-md-2" type="button">Button</button>
             <button class="btn btn-warning" type="button">Button</button>
           </div>
@@ -183,7 +195,7 @@
       <div class="card p-3 bg-light">
         <div class="container mb-3">
           <!-- btn-group -->
-          <div class="" role="group" aria-label="Basic example">
+          <div class="btn-group" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-primary">Left</button>
             <button type="button" class="btn btn-primary">Middle</button>
             <button type="button" class="btn btn-primary">Right</button>
@@ -192,7 +204,7 @@
         <!-- ! -->
         <div class="container">
           <!-- btn-group -->
-          <div class="">
+          <div class="btn-group">
             <a href="#" class="btn btn-primary active" aria-current="page"
               >Active link</a
             >
@@ -210,7 +222,11 @@
         <!-- Mixed styles -->
         <div class="container mb-3">
           <!-- btn-group -->
-          <div class="" role="group" aria-label="Basic mixed styles example">
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Basic mixed styles example"
+          >
             <button type="button" class="btn btn-danger">Left</button>
             <button type="button" class="btn btn-warning">Middle</button>
             <button type="button" class="btn btn-success">Right</button>
@@ -219,7 +235,11 @@
         <!-- Outline styles -->
         <div class="container">
           <!-- btn-group -->
-          <div class="" role="group" aria-label="Basic outlined example">
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Basic outlined example"
+          >
             <button type="button" class="btn btn-outline-primary">Left</button>
             <button type="button" class="btn btn-outline-primary">
               Middle
@@ -245,7 +265,12 @@
             aria-label="Basic checkbox toggle button group"
           >
             <!-- type="checkbox" class="btn-check"id="btncheck1" autocomplete="off" -->
-            <input />
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck1"
+              autocomplete="off"
+            />
             <label class="btn btn-outline-primary" for="btncheck1"
               >Checkbox 1</label
             >
