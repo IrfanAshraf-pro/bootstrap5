@@ -38,20 +38,34 @@
         <!--  example -->
 
         <!-- btn-close -->
-        <button type="button" class="" aria-label="Close"></button>
+        <button type="button" class="btn-close" aria-label="Close"></button>
 
         <!-- Disabled state -->
 
         <!-- btn-close  & disabled prop-->
-        <button type="button" class="" aria-label="Close"></button>
+        <button
+          type="button"
+          class="btn-close"
+          disabled
+          aria-label="Close"
+        ></button>
 
         <!--White btn with dark bg  -->
         <div class="container bg-dark p-3">
           <!-- btn-close btn-close-white -->
-          <button type="button" class="" aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            aria-label="Close"
+          ></button>
 
           <!-- btn-close btn-close-white & disabled prop -->
-          <button type="button" class="" disabled aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            disabled
+            aria-label="Close"
+          ></button>
         </div>
       </div>
 
@@ -65,7 +79,7 @@
         <p>
           <a
             class="btn btn-primary"
-            data-bs-toggle=""
+            data-bs-toggle="collapse"
             href="#collapseExample"
             role="button"
           >
@@ -127,7 +141,7 @@
         <div class="row">
           <div class="col">
             <!-- collapse multi-collapse &  id="multiCollapseExample1"-->
-            <div class="" id="">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
               <div class="card card-body">
                 Some placeholder content for the first collapse component of
                 this multi-collapse example. This panel is hidden by default but
@@ -137,7 +151,7 @@
           </div>
           <div class="col">
             <!-- collapse multi-collapse &  id="multiCollapseExample2"-->
-            <div class="" id="">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
               <div class="card card-body">
                 Some placeholder content for the second collapse component of
                 this multi-collapse example. This panel is hidden by default but
