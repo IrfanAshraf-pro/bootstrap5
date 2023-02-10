@@ -40,12 +40,12 @@
 
       <div class="card p-3 bg-light">
         <!-- badge bg-secondary -->
-        <h1>Example heading <span class="">New</span></h1>
-        <h2>Example heading <span class="">New</span></h2>
-        <h3>Example heading <span class="">New</span></h3>
-        <h4>Example heading <span class="">New</span></h4>
-        <h5>Example heading <span class="">New</span></h5>
-        <h6>Example heading <span class="">New</span></h6>
+        <h1>Example heading <span class="badge bg-success">New</span></h1>
+        <h2>Example heading <span class="badge bg-success">New</span></h2>
+        <h3>Example heading <span class="badge bg-success">New</span></h3>
+        <h4>Example heading <span class="badge bg-success">New</span></h4>
+        <h5>Example heading <span class="badge bg-success">New</span></h5>
+        <h6>Example heading <span class="badge bg-success">New</span></h6>
       </div>
 
       <!--todo: Badges Buttons -->
@@ -55,13 +55,13 @@
       <div class="card p-3 bg-light">
         <div class="container">
           <!-- btn-primary & badge bg-secondary-->
-          <button type="button" class="btn">
-            Notifications <span class="">4</span>
+          <button type="button" class="btn btn-danger">
+            Notifications <span class="badge bg-info">4</span>
           </button>
           <!-- btn-dark & badge bg-warning-->
 
-          <button type="button" class="btn">
-            Notifications <span class="">8</span>
+          <button type="button" class="btn btn-dark">
+            Notifications <span class="badge bg-success">8</span>
           </button>
         </div>
       </div>
@@ -73,9 +73,11 @@
       <div class="card p-3 bg-light">
         <div class="container mb-3">
           <!-- position-relative -->
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary position-relative">
             Inbox
-            <span class="">
+            <span
+              class="position-absolute top-0 start-100 translate-middle bg-danger rounded-pill"
+            >
               99+
               <span class="visually-hidden">unread messages</span>
             </span>
@@ -84,9 +86,11 @@
 
         <div class="container">
           <!--  -->
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary position-relative">
             Profile
-            <span class="">
+            <span
+              class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
+            >
               <span class="visually-hidden">New alerts</span>
             </span>
           </button>
@@ -104,13 +108,13 @@
           <span class="badge bg-success">Success</span>
           <span class="badge bg-danger">Danger</span>
           <!-- text-dark -->
-          <span class="badge bg-warning">Warning</span>
+          <span class="badge bg-warning text-dark">Warning</span>
           <!-- text-dark -->
-          <span class="badge bg-info">Info</span>
+          <span class="badge bg-info text-dark">Info</span>
           <!-- text-dark -->
-          <span class="badge bg-light">Light</span>
+          <span class="badge bg-light text-dark">Light</span>
           <!-- text-danger -->
-          <span class="badge bg-dark">Dark</span>
+          <span class="badge bg-dark text-danger">Dark</span>
         </div>
       </div>
 
@@ -121,14 +125,14 @@
       <div class="card p-3 bg-light">
         <div class="container">
           <!-- rounded-pill -->
-          <span class="badge bg-primary">Primary</span>
-          <span class="badge bg-secondary">Secondary</span>
-          <span class="badge bg-success">Success</span>
-          <span class="badge bg-danger">Danger</span>
-          <span class="badge bg-warning text-dark">Warning</span>
-          <span class="badge bg-info text-dark">Info</span>
-          <span class="badge bg-light text-dark">Light</span>
-          <span class="badge bg-dark">Dark</span>
+          <span class="badge bg-primary rounded-pill">Primary</span>
+          <span class="badge bg-secondary rounded-pill">Secondary</span>
+          <span class="badge bg-success rounded-pill">Success</span>
+          <span class="badge bg-danger rounded-pill">Danger</span>
+          <span class="badge bg-warning text-dark rounded-pill">Warning</span>
+          <span class="badge bg-info text-dark rounded-pill">Info</span>
+          <span class="badge bg-light text-dark rounded-pill">Light</span>
+          <span class="badge bg-dark rounded-pill">Dark</span>
         </div>
       </div>
 
@@ -144,22 +148,22 @@
 
       <div class="card p-3 bg-light">
         <!-- aria-label="breadcrumb" -->
-        <nav>
+        <nav aria-label="breadcrumb">
           <!-- breadcrumb -->
-          <ol class="">
+          <ol class="breadcrumb">
             <!-- breadcrumb-item active & aria-current="page"-->
-            <li class="">Home</li>
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
           </ol>
         </nav>
 
         <!-- breadcrumb -->
-        <nav aria-label="">
+        <nav aria-label="breadcrumb">
           <!-- breadcrumb -->
-          <ol class="">
+          <ol class="breadcrumb">
             <!-- breadcrumb-item -->
-            <li class=""><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
             <!-- active -->
-            <li class="breadcrumb-item" aria-current="page">Library</li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
           </ol>
         </nav>
 
@@ -168,7 +172,7 @@
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Library</a></li>
             <!-- active -->
-            <li class="breadcrumb-item" aria-current="page">Data</li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
           </ol>
         </nav>
       </div>
@@ -179,7 +183,7 @@
 
       <div class="card p-3 bg-light">
         <!-- style="--bs-breadcrumb-divider: '>'" -->
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '<>'">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Library</li>
