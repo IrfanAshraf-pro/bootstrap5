@@ -29,21 +29,21 @@
       </h1>
     </header>
 
-    < class="container">
+    <div class="container">
     <!--todo: Simple List  -->
 
     <h2 class="display-4 mt-5"><small>1.</small> Simple List</h2>
 
     <div class="card m-3 p-2">
       <!-- list-unstyled -->
-      <ul class="bg-warning">
+      <ul class="bg-warning list-unstyled">
         <li>This is a list.</li>
         <li>It appears completely unstyled.</li>
         <li>Structurally, it's still a list.</li>
         <li>However, this style only applies to immediate child elements.</li>
         <li>
           Nested lists:
-          <ul>
+          <ul >
             <li>are unaffected by this style</li>
             <li>will still show a bullet</li>
             <li>and have appropriate left margin</li>
@@ -59,11 +59,11 @@
 
     <div class="card m-3 p-2">
       <!--  list-inline -->
-      <ul class="bg-light">
+      <ul class="bg-light list-inline">
         <!-- list-inline-item -->
-        <li class="text-danger">This is a list item.</li>
-        <li class="text-primary">And another one.</li>
-        <li class="text-info">But they're displayed inline.</li>
+        <li class="text-danger list-inline-item">This is a list item.</li>
+        <li class="text-primary list-inline-item">And another one.</li>
+        <li class="text-info list-inline-item">But they're displayed inline.</li>
       </ul>
     </div>
 
@@ -79,13 +79,13 @@
       <h2 class="display-6 mt-5"><small>3.1</small> Basic group</h2>
 
       <!-- list-group -->
-      <ul class="">
+      <ul class="list-group">
         <!-- list-group-item -->
-        <li class="">An item</li>
-        <li class="">A second item</li>
-        <li class="">A third item</li>
-        <li class="">A fourth item</li>
-        <li class="">And a fifth one</li>
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
       </ul>
 
       <!--todo: Active items  -->
@@ -95,7 +95,7 @@
       <!-- !  Add .active to a .list-group-item to indicate the current active selection.  -->
       <ul class="list-group bg-light">
         <!--  active -->
-        <li class="list-group-item" aria-current="true">An active item</li>
+        <li class="list-group-item active" aria-current="true">An active item</li>
         <li class="list-group-item">A second item</li>
         <li class="list-group-item">A third item</li>
         <li class="list-group-item">A fourth item</li>
@@ -109,7 +109,7 @@
       <ul class="list-group">
         <!-- disabled & aria-disabled="true"-->
 
-        <li class="list-group-item">A disabled item</li>
+        <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
         <li class="list-group-item">A second item</li>
         <li class="list-group-item">A third item</li>
         <li class="list-group-item">A fourth item</li>
@@ -122,10 +122,10 @@
 
       <div class="list-group">
         <!-- list-group-item-action & active -->
-        <a href="#" class="list-group-item" aria-current="true">
+        <a href="#" class="list-group-item active" >
           The current link item
         </a>
-        <a href="#" class="list-group-item list-group-item-action"
+        <a href="#" class="list-group-item list-group-item-action" aria-current="true"
           >A second link item</a
         >
         <a href="#" class="list-group-item list-group-item-action"
@@ -150,7 +150,7 @@
       <h2 class="display-6 mt-5"><small>3.5</small> Flush</h2>
 
       <!-- list-group-flush -->
-      <ul class="list-group">
+      <ul class="list-group list-group-flush">
         <li class="list-group-item">An item</li>
         <li class="list-group-item">A second item</li>
         <li class="list-group-item">A third item</li>
@@ -177,21 +177,21 @@
         <!-- None -->
         <li class="list-group-item">A simple default list group item</li>
         <!-- list-group-item-primary -->
-        <li class="list-group-item">A simple primary list group item</li>
+        <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
         <!-- list-group-item-secondary -->
-        <li class="list-group-item">A simple secondary list group item</li>
+        <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
         <!--  list-group-item-success -->
-        <li class="list-group-item">A simple success list group item</li>
+        <li class="list-group-item list-group-item-success">A simple success list group item</li>
         <!-- list-group-item-danger -->
-        <li class="list-group-item">A simple danger list group item</li>
+        <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
         <!-- list-group-item-warning -->
-        <li class="list-group-item">A simple warning list group item</li>
+        <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
         <!-- list-group-item-info -->
-        <li class="list-group-item">A simple info list group item</li>
+        <li class="list-group-item list-group-item-info">A simple info list group item</li>
         <!-- list-group-item-light -->
-        <li class="list-group-item">A simple light list group item</li>
+        <li class="list-group-item list-group-item-light">A simple light list group item</li>
         <!-- list-group-item-dark -->
-        <li class="list-group-item">A simple dark list group item</li>
+        <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
       </ul>
 
       <!--todo: Checkboxes and radios  -->
@@ -201,12 +201,12 @@
       <ul class="list-group">
         <li class="list-group-item">
           <!-- form-check-input  &  type="checkbox"-->
-          <input class="me-1" value="" aria-label="..." />
+          <input class="me-1 form-check-input" type="checkbox" value="" aria-label="..." />
           First checkbox
         </li>
         <!-- form-check-input  &  type="checkbox"-->
         <li class="list-group-item">
-          <input class="me-1" value="" aria-label="..." />
+          <input class="me-1 form-check-input" value="" aria-label="..." type="checkbox"/>
           Second checkbox
         </li>
         <li class="list-group-item">
