@@ -34,7 +34,14 @@
 
       <h2 class="display-4 mt-5"><small>1.</small> Example</h2>
 
-      <button type="button" class="btn btn-lg btn-danger">
+      <button
+        type="button"
+        class="btn btn-lg btn-danger"
+        data-bs-toggle="popover"
+        data-bs-trigger="focus"
+        title="Example Popover"
+        data-bs-content="Content of the popover"
+      >
         Click to toggle popover
       </button>
 
@@ -52,7 +59,8 @@
           class="btn btn-secondary"
           data-bs-container="body"
           data-bs-toggle="popover"
-          data-bs-placement=""
+          data-bs-trigger="focus"
+          data-bs-placement="top"
           data-bs-content="Top popover"
         >
           Popover on top
@@ -64,7 +72,8 @@
           class="btn btn-info"
           data-bs-container="body"
           data-bs-toggle="popover"
-          data-bs-placement=""
+          data-bs-placement="right"
+          data-bs-trigger="focus"
           data-bs-content="Right popover"
         >
           Popover on right
@@ -75,7 +84,7 @@
           class="btn btn-warning"
           data-bs-container="body"
           data-bs-toggle="popover"
-          data-bs-placement=""
+          data-bs-placement="bottom"
           data-bs-content="Bottom popover"
         >
           Popover on bottom
@@ -86,7 +95,7 @@
           class="btn btn-success"
           data-bs-container="body"
           data-bs-toggle="popover"
-          data-bs-placement=""
+          data-bs-placement="left"
           data-bs-content="Left popover"
         >
           Popover on left
@@ -104,6 +113,8 @@
         role="button"
         data-bs-toggle="popover"
         title="Dismissible popover"
+        data-bs-trigger="focus"
+        data-bs-target="focus"
         data-bs-content="And here's some amazing content. It's very engaging. Right?"
         >Dismissible popover</a
       >
@@ -114,7 +125,8 @@
         class="d-inline-block"
         tabindex="0"
         data-bs-toggle="popover"
-        data-bs-content="Disabled popover"
+        data-bs-content="This popover is disabled"
+        data-bs-trigger="hover focus"
       >
         <button class="btn btn-primary" type="button" disabled>
           Disabled button
