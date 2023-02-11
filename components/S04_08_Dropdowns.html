@@ -38,10 +38,10 @@
         <div class="card">
           <h2 class="display-6 mt-5"><small>1.1</small> Single button</h2>
           <!-- dropdown -->
-          <div class="">
+          <div class="dropdown">
             <!-- dropdown-toggle -->
             <button
-              class="btn btn-secondary"
+              class="btn dropdown-toggle btn-secondary"
               type="button"
               id="dropdownMenuButton1"
               data-bs-toggle="dropdown"
@@ -50,13 +50,13 @@
               Dropdown button
             </button>
             <!-- dropdown-menu -->
-            <ul class="" aria-labelledby="dropdownMenuButton1">
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <!-- dropdown-item -->
-              <li><a class="" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
               <!-- dropdown-item -->
-              <li><a class="" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
               <!-- dropdown-item -->
-              <li><a class="" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </div>
         </div>
@@ -69,7 +69,8 @@
           <div class="dropdown">
             <!-- dropdown-toggle &  role="button"-->
             <a
-              class="btn btn-secondary"
+              class="btn btn-secondary dropdown-toggle"
+              role="button"
               href="#"
               id="dropdownMenuLink"
               data-bs-toggle="dropdown"
@@ -78,30 +79,30 @@
               Dropdown link
             </a>
             <!-- dropdown-menu -->
-            <ul class="" aria-labelledby="dropdownMenuLink">
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <!-- dropdown-item -->
-              <li><a class="" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
               <!-- dropdown-item -->
-              <li><a class="" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
               <!-- dropdown-item -->
-              <li><a class="" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </div>
         </div>
         <!--The best part is you can do this with any button variant, too: -->
         <!-- btn-group -->
-        <div class="">
+        <div class="btn-group">
           <!-- dropdown-toggle -->
           <button
             type="button"
-            class="btn btn-danger"
+            class="btn btn-danger dropdown-toggle"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             Action
           </button>
           <!-- dropdown-menu -->
-          <ul class="">
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -114,12 +115,12 @@
 
         <!-- Example split danger button -->
         <!-- btn-group -->
-        <div class="">
+        <div class="btn-group">
           <button type="button" class="btn btn-danger">Action</button>
           <!-- dropdown-toggle dropdown-toggle-split -->
           <button
             type="button"
-            class="btn btn-dark"
+            class="btn btn-dark dropdown-toggle dropdown-toggle-split"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
@@ -146,10 +147,10 @@
       <div class="container">
         <!-- Large button groups (default and split) -->
         <!-- btn-group -->
-        <div class="">
+        <div class="btn-group">
           <!-- btn-lg -->
           <button
-            class="btn btn-secondary dropdown-toggle"
+            class="btn btn-secondary btn-lg dropdown-toggle"
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -162,13 +163,13 @@
         </div>
         <div class="btn-group">
           <!-- btn-lg -->
-          <button class="btn btn-secondary" type="button">
+          <button class="btn btn-secondary btn-lg" type="button">
             Large split button
           </button>
           <!-- btn-lg -->
           <button
             type="button"
-            class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+            class="btn btn-lg btn-warning dropdown-toggle dropdown-toggle-split"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
@@ -183,7 +184,7 @@
         <div class="btn-group">
           <!-- btn-sm -->
           <button
-            class="btn btn-secondary dropdown-toggle"
+            class="btn btn-secondary btn-sm dropdown-toggle"
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -196,7 +197,7 @@
         </div>
         <div class="btn-group">
           <!-- btn-sm -->
-          <button class="btn btn-secondary" type="button">
+          <button class="btn btn-sm btn-secondary" type="button">
             Small split button
           </button>
           <button
@@ -229,7 +230,10 @@
             Dropdown button
           </button>
           <!-- dropdown-menu-dark -->
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+          <ul
+            class="dropdown-menu dropdown-menu-dark"
+            aria-labelledby="dropdownMenuButton2"
+          >
             <li><a class="dropdown-item active" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
