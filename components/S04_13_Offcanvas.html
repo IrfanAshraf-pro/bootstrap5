@@ -35,7 +35,15 @@
       <h2 class="display-4 mt-5"><small>1.</small> Example</h2>
       <!-- using   href attribute on a tags -->
 
-      <a class="btn btn-primary" role="button"> Link with href </a>
+      <a
+        class="btn btn-primary"
+        data-bs-toggle="offcanvas"
+        aria-controls="offcanvasExample"
+        role="button"
+        href="#offcanvasExample"
+      >
+        Link with href
+      </a>
 
       <!-- using   data-bs-target on button tags -->
 
@@ -106,7 +114,7 @@
 
       <!-- offcanvas-top -->
       <div
-        class="offcanvas"
+        class="offcanvas offcanvas-top"
         tabindex="-1"
         id="offcanvasTop"
         aria-labelledby="offcanvasTopLabel"
@@ -137,7 +145,7 @@
 
       <!-- offcanvas-end -->
       <div
-        class="offcanvas"
+        class="offcanvas offcanvas-end"
         tabindex="-1"
         id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
@@ -168,7 +176,7 @@
 
       <!-- offcanvas-bottom -->
       <div
-        class="offcanvas"
+        class="offcanvas offcanvas-bottom"
         tabindex="-1"
         id="offcanvasBottom"
         aria-labelledby="offcanvasBottomLabel"
@@ -229,6 +237,8 @@
         tabindex="-1"
         id="offcanvasScrolling"
         aria-labelledby="offcanvasScrollingLabel"
+        data-bs-scroll="true"
+        data-bs-backdrop="true"
       >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
@@ -254,6 +264,7 @@
         tabindex="-1"
         id="offcanvasWithBackdrop"
         aria-labelledby="offcanvasWithBackdropLabel"
+        data-bs-backdrop="false"
       >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
@@ -277,6 +288,8 @@
         tabindex="-1"
         id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel"
+        data-bs-scroll="true"
+        data-bs-backdrop="true"
       >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
