@@ -33,14 +33,18 @@
 
       <div class="d-flex justify-content-between p-3 bg-light flex-wrap">
         <!-- top -->
-        <button type="button" class="btn btn-secondary">Tooltip on top</button>
+        <button type="button" class="btn btn-secondary"
+        data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Tooltip on right"
+        >Tooltip on top</button>
 
         <!-- right -->
         <button
           type="button"
           class="btn btn-secondary"
           data-bs-toggle="tooltip"
-          data-bs-placement=""
+          data-bs-placement="right"
           title="Tooltip on right"
         >
           Tooltip on right
@@ -51,7 +55,7 @@
           type="button"
           class="btn btn-secondary"
           data-bs-toggle="tooltip"
-          data-bs-placement=""
+          data-bs-placement="bottom"
           title="Tooltip on bottom"
         >
           Tooltip on bottom
@@ -62,7 +66,7 @@
           type="button"
           class="btn btn-secondary"
           data-bs-toggle="tooltip"
-          data-bs-placement=""
+          data-bs-placement="left"
           title="Tooltip on left"
           style="visibility: visible"
         >
