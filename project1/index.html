@@ -16,6 +16,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+    <!-- Style css -->
+    <link rel="stylesheet" href="./style.css" />
     <title>Bio</title>
   </head>
   <body class="vh-100 bg-dark text-light">
@@ -40,7 +42,7 @@
                 href=""
                 class="nav-link active"
                 data-bs-toggle="collapse"
-                data-bs-target="multi-collapse"
+                data-bs-target=".multi-collapse"
                 aria-expanded="false"
                 aria-controls="about contact"
                 >Info</a
@@ -103,6 +105,53 @@
         </button>
       </div>
       <!-- Header > About and Contact dropdown content -->
+      <div class="row mt-3">
+        <!-- About section -->
+        <div class="col-md-6 mt-3">
+          <div class="collapse multi-collapse" id="about">
+            <div class="card card-body text-start shadow bg-dark-transparent">
+              <h2 class="card-title text-danger">About</h2>
+              <div class="card-text">
+                <h3 class="text-white-50 ms-3">Irfan Ashraf</h3>
+                <ul class="list-unstyled ms-5">
+                  <li>Web Developer</li>
+                  <li>React Developer</li>
+                  <li>Full Stack Developer</li>
+                  <li>Front End Developer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-6 mt-3">
+          <div class="collapse multi-collapse" id="contact">
+            <div class="card card-body text-start shadow bg-dark-transparent">
+              <h2 class="card-title text-danger">Contact</h2>
+              <div class="card-text">
+                <h3 class="text-white-50 ms-3">Irfan Ashraf</h3>
+                <ul class="list-unstyled ms-5">
+                  <li>
+                    <i class="me-2 text-danger bi bi-house"></i> City:
+                    Rawalpindi
+                  </li>
+                  <li>
+                    <i class="me-2 text-danger bi bi-signpost"></i>Street: 9th
+                  </li>
+                  <li>
+                    <i class="me-2 text-danger bi bi-telephone"></i>Phone: +555
+                    6666 4444
+                  </li>
+                  <li>
+                    <i class="me-2 text-danger bi bi-envelope"></i>Email:
+                    irfanashraf4090@gmail.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Profile Img -->
